@@ -1,16 +1,36 @@
-// This file can be replaced during build by using the `fileReplacements` array.
-// `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
-// The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
-};
+  production: false,
+  assetsUrl: "/",
 
-/*
- * For easier debugging in development mode, you can import the following file
- * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
- *
- * This import should be commented out in production mode because it will have a negative impact
- * on performance if an error is thrown.
- */
-// import 'zone.js/dist/zone-error';  // Included with Angular CLI.
+  baseUrl: "http://qa.edqart.com/master-data-api/",
+  version2_baseUrl: "http://165.22.216.230:8900/",
+  verison2InvoiceUrl: "http://165.22.216.230:9900/",
+
+  elasticUrl: 'http://128.199.22.83',
+
+  hostUrl: 'http://localhost:4200',
+
+  // sendToAirpayUrl: 'http://airpay.edvantagepoint.com/airpay/sendtoairpay.jsp',
+  sendToAirpayUrl: 'http://airpay.edqart.com/airpay/sendtoairpay.jsp',
+  vendorUrl: 'http://qa.seller.edqart.com',
+
+  // Prod
+
+  // QA Key
+  razorpayKey: "rzp_test_DiCR1eAmGiegML",
+
+  //Prod Key
+  // razorpayKey: "rzp_live_zSnv9IITvqTT4Z",
+
+  /*Note Please Change this acconding to environment for AirPay
+   for qa environment AirpayEnv :"qa"
+   for Production environment AirpayEnv :"prod"
+   for stage environment AirpayEnv: "stage"
+   for local environment AirpayEnv: "lc"
+  */
+
+  AirpayEnv: "prod",
+
+  MeasurementId: "G-3L2D7DNCLR"
+};
