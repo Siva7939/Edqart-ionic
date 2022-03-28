@@ -1,0 +1,7 @@
+{
+  "name": "edqart",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
